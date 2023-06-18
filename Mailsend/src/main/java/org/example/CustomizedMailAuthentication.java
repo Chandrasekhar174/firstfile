@@ -1,4 +1,4 @@
-package org.geekster;
+package org.example;
 
 import javax.mail.Authenticator;
 import javax.mail.PasswordAuthentication;

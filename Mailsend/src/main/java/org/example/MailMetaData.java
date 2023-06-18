@@ -1,4 +1,4 @@
-package org.geekster;
+package org.example;
 
 public class MailMetaData {
 
@@ -9,7 +9,7 @@ public class MailMetaData {
 
     public static final String myUserMail = "chandrasekharsahu174@gmail.com";
 
-    public static final String password = "jpjoqoppvvpcomdy";// app password
+    public static final String password = "nfhqohpryburvzfp";// app password
 
     public static final String receiverMail = "chandrasekharsahu171@gmail.com";
 

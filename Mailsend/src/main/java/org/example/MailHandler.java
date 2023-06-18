@@ -1,10 +1,8 @@
-package org.geekster;
+package org.example;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
-import java.io.File;
 import java.util.Properties;
 
 public class MailHandler {
@@ -22,7 +20,7 @@ public class MailHandler {
 
 
         //create a session using sender-email and password
-        Authenticator mailAuthenticator = new CustomizedMailAuthentication();
+        Authenticator mailAuthenticator=new CustomizedMailAuthentication();
         Session mailSession = Session.getInstance(sysProperties,mailAuthenticator);
 
         //mime message build
