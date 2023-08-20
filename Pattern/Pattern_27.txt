@@ -1,0 +1,41 @@
+                 1
+               1 2 1
+             1 2 3 2 1
+           1 2 3 4 3 2 1
+         1 2 3 4 5 4 3 2 1
+
+
+
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int n=sc.nextInt();
+	    for(int i=0;i<n;i++)
+	    {
+	        int j=0;
+	        for(;j<n-i;j++)
+	        {
+	            System.out.print(" \t");
+	        }
+	        int m=1;
+	        int k=j;
+	        for(;k<=n;k++)
+	        {
+	            System.out.print(m+"\t");
+	            m++;
+	        }
+	        int u=i;
+	        for(int l=k;l<=n+i;l++)
+	        {
+	            System.out.print(u+"\t");
+	            u--;
+	        }
+	        System.out.println();
+	    }
+	
+	}
+}
