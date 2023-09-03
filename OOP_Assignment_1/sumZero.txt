@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class ZeroSumElementsFinder {
+    public static void main(String[] args) {
+        int[] inputArray = {4, 2, -3, 1, 6, -2};
+        List<Integer> zeroSumElements = findZeroSumElements(inputArray);
+        
+        if (zeroSumElements.isEmpty()) {
+            System.out.println("No Elements found");
+        } else {
+            System.out.println("Zero Sum Elements: " + zeroSumElements);
+        }
+    }
+
+    public static List<Integer> findZeroSumElements(int[] nums) {
+        List<Integer> result = new ArrayList<>();
+        Map<Integer, Integer> numCount = new HashMap<>();
+        
+        for (int num : nums) {
+            int complement = -num;
+            if (numCount.containsKey(complement)) {
+                result.add(num);
+                result.add(complement);
+            }
+            numCount.put(num, 1);
+        }
+        
+        return result;
+    }
+}
